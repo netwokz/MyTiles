@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_dark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="@string/welcome_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/slide_desc" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/welcome_text"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/android_modify_system_settings_thumbnail_enabled" />
+
+
+        <Button
+            android:id="@+id/btn_enable_write_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:background="@color/grey_light"
+            android:text="@string/enable_write_settings_permission"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

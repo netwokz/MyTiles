@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen>
+
+
+    <!--
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="launcher_icon_switch"
+        android:summary="Hides the icon in the Launcher"
+        android:title="Hide Icon" />
+    -->
+
+</PreferenceScreen>

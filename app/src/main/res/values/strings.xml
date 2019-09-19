@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">My Tiles</string>
+    <string name="tile_label_screen_brightness">Timeout</string>
+    <string name="service_inactive">Inactive</string>
+    <string name="service_active">Active</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_new">NewActivity</string>
+    <string name="title_activity_main">Entry Screens</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="CONTROLS_SKIP">SKIP</string>
+    <string name="CONTROLS_NEXT"><![CDATA[NEXT >]]></string>
+    <string name="title_activity_login">Login</string>
+    <string name="tile_label_brightness">Brightness</string>
+
+    <string name="welcome_text">For this application to function, you must enable write settings \n\n To do this: \n Click the button below \n Enable the setting \n Come back to this app</string>
+    <string name="welcome_note">Note: If it\'s already enabled, disable and enable it again</string>
+    <string name="congratulations">Congratulations! \n Now add whichever tiles you want to the quick settings drawer.</string>
+    <string name="enable_write_settings_permission">Enable Write Settings Permission</string>
+    <string name="tile_label_uptime">Uptime</string>
+</resources>
