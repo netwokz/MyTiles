@@ -32,7 +32,6 @@ public class TimeoutDialogActivity extends Activity implements AdapterView.OnIte
     PowerManager.WakeLock wakelock = null;
     Intent batteryStatus = null;
 
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

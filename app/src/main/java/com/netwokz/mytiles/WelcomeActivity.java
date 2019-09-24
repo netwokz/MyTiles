@@ -25,19 +25,20 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.welcome_slide_1);
 
-        starterintent = getIntent();
-        if (!Settings.System.canWrite(this)) {
-            flag_is_permission_set = false;
-            Intent intent = new Intent(android.provider.Settings.ACTION_MANAGE_WRITE_SETTINGS);
-            intent.setData(Uri.parse("package:" + this.getPackageName()));
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivityForResult(intent, WelcomeActivity.CODE_WRITE_SETTINGS_PERMISSION);
-        } else {
-            flag_is_permission_set = true;
-            launchHomeScreen();
-            finish();
-        }
+//        starterintent = getIntent();
+//        if (!Settings.System.canWrite(this)) {
+//            flag_is_permission_set = false;
+//            Intent intent = new Intent(android.provider.Settings.ACTION_MANAGE_WRITE_SETTINGS);
+//            intent.setData(Uri.parse("package:" + this.getPackageName()));
+//            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//            startActivityForResult(intent, WelcomeActivity.CODE_WRITE_SETTINGS_PERMISSION);
+//        } else {
+//            flag_is_permission_set = true;
+//            launchHomeScreen();
+//            finish();
+//        }
 
 //        // Checking if we can write system settings - before calling setContentView()
 //        if (Settings.System.canWrite(getApplicationContext())) {

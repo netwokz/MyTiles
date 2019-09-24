@@ -4,6 +4,7 @@ import android.graphics.drawable.Icon;
 import android.os.SystemClock;
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
+import android.util.Log;
 
 import java.util.concurrent.TimeUnit;
 
@@ -42,7 +43,10 @@ public class UptimeTile extends TileService {
     @Override
     public void onStartListening() {
         super.onStartListening();
-        updateTile();
+        Log.d("UptimeTile.java", "onStartListening()");
+        Tile tile = this.getQsTile();
+        tile.setLabel(formatInterval(getUptime()));
+        tile.updateTile();
     }
 
     public long getUptime() {

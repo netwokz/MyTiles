@@ -3,6 +3,7 @@ package com.netwokz.mytiles;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.annotation.Nullable;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -17,7 +18,10 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_enabled);
+        if (Settings.System.canWrite(this)) {
+            setContentView(R.layout.activity_main_enabled);
+        } else
+            setContentView(R.layout.welcome_slide_1);
     }
 
     @Override
